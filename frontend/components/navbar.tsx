@@ -22,8 +22,8 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/images/logo.jpg" alt="Logo Ánh Bình Minh" width={40} height={40} className="rounded-md" />
-            <span className="hidden font-bold sm:inline-block text-xl">Ánh Bình Minh</span>
+            <Image src="/images/logo.jpg" alt="Logo Lớp học Vinhomes" width={40} height={40} className="rounded-md" />
+            <span className="hidden font-bold sm:inline-block text-xl">Lớp học Vinhomes</span>
           </Link>
         </div>
 

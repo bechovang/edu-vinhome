@@ -130,43 +130,44 @@ export default function RegisterPage() {
         <section className="py-8 bg-gray-50 rounded-lg mb-6 sm:mb-8">
           <div className="px-4">
             <h2 className="text-xl sm:text-2xl font-bold text-center mb-4">
-              LỊCH HỌC CÁC LỚP TẠI TRUNG TÂM - NĂM HỌC 2024-2025
+              📅 Lịch học dự kiến - Năm học 2024-2025
             </h2>
-            <p className="text-center mb-4 text-sm sm:text-base">Địa chỉ: số 101 Làng Tăng Phú, P Tăng Nhơn Phú A, TP Thủ Đức, TP Hồ Chí Minh</p>
+            <p className="text-center mb-4 text-sm sm:text-base">Địa chỉ: BS10 Vinhomes Grand Park, TP. Thủ Đức, TP Hồ Chí Minh</p>
 
             <div className="overflow-x-auto rounded-lg shadow-lg">
               <Table className="w-full text-center border-collapse text-xs sm:text-sm">
                 <TableHeader>
                   <TableRow className="border-2 border-red-300">
                     <TableHead className="bg-red-700 text-white border-2 border-red-300 p-2 sm:p-3">
-                      Lớp (khóa)
+                      Thứ
                     </TableHead>
-                    {['T2', 'T3', 'T4', 'T5', 'T6'].map((day) => (
-                      <TableHead 
-                        key={day} 
-                        className="bg-red-700 text-white border-2 border-red-300 p-2 sm:p-3 text-center"
-                      >
-                        {day}
-                      </TableHead>
-                    ))}
+                    <TableHead className="bg-red-700 text-white border-2 border-red-300 p-2 sm:p-3 text-center">
+                      Ca Sáng (8:00 - 9:30)
+                    </TableHead>
+                    <TableHead className="bg-red-700 text-white border-2 border-red-300 p-2 sm:p-3 text-center">
+                      Ca Chiều (14:00 - 15:30)
+                    </TableHead>
+                    <TableHead className="bg-red-700 text-white border-2 border-red-300 p-2 sm:p-3 text-center">
+                      Ca Tối (17:00 - 18:30)
+                    </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {[
-                    { name: "10A (2009)", slots: ["", "", "18:00-21:00", "", ""] },
-                    { name: "11A (2008)", slots: ["", "", "", "18:00-21:00", ""] },
-                    { name: "11B (2008)", slots: ["", "", "", "", "18:00-21:00"] },
-                    { name: "12A (2007)", slots: ["18:00-21:00", "", "", "", ""] },
-                    { name: "12B (2007)", slots: ["", "18:00-21:00", "", "", ""] },
-                    { name: "12C (2007)", slots: ["", "", "", "", "13:30-16:30"] },
-                    { name: "12D (2007)", slots: ["", "", "", "", "13:30-16:30"] },
+                    { day: "Thứ 2", slots: ["", "", "Lớp 9 - Môn Hóa"] },
+                    { day: "Thứ 3", slots: ["", "", "Lớp 11 - Môn Lý"] },
+                    { day: "Thứ 4", slots: ["", "", "Lớp 8 - Môn Lập trình"] },
+                    { day: "Thứ 5", slots: ["", "", "Lớp 10 - Môn Toán"] },
+                    { day: "Thứ 6", slots: ["", "", "Lớp 12 - Môn Hóa"] },
+                    { day: "Thứ 7", slots: ["Lớp 6 - Môn Khoa Học", "Lớp 7 - Môn Toán", "Lớp 11 - Môn Lập trình"] },
+                    { day: "Chủ Nhật", slots: ["Lớp 7 - Môn Lập trình", "Lớp 8 - Môn Toán", "Lớp 12 - Môn Toán"] },
                   ].map((row, index) => (
                     <TableRow
                       key={index}
                       className={`border-2 border-red-300 ${index % 2 === 0 ? "bg-white" : "bg-red-100"}`}
                     >
                       <TableCell className="font-medium border-2 border-red-300 p-2 sm:p-3">
-                        {row.name}
+                        {row.day}
                       </TableCell>
                       {row.slots.map((slot, i) => (
                         <TableCell key={i} className="border-2 border-red-300 p-2 sm:p-3">
@@ -179,13 +180,13 @@ export default function RegisterPage() {
               </Table>
             </div>
             <div className="mt-4 text-center text-xs sm:text-sm">
-              <p>Trung Tâm dạy học ngoài giờ - chuyên bồi dưỡng văn hoá cho học sinh phổ thông.</p>
+              <p>LỚP LUYỆN THI & NÂNG CAO ĐIỂM SỐ CẤP 2 & CẤP 3 TẠI VINHOMES GRAND PARK.</p>
               <p>
-                Liên hệ qua Zalo: <span className="font-medium">0971515451</span>
+                Liên hệ qua Zalo: <span className="font-medium">0906 063 826 | 0932 720 343</span>
                 <br className="sm:hidden" />
                 <span className="hidden sm:inline"> • </span>
                 Đăng ký học tại:{" "}
-                <span className="font-medium">www.TrungTamAnhBinhMinh.vn</span>
+                <span className="font-medium">www.Lophocvinhomes.vn</span>
               </p>
             </div>
           </div>
@@ -284,10 +285,10 @@ export default function RegisterPage() {
                         <SelectValue placeholder="- Chọn môn -" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="Hóa">Hóa học</SelectItem>
                         <SelectItem value="Toán">Toán học</SelectItem>
-                        <SelectItem value="lý">Vật lý</SelectItem>
-                        <SelectItem value="Sinh">Sinh học</SelectItem>
+                        <SelectItem value="Lý">Vật lý</SelectItem>
+                        <SelectItem value="Hóa">Hóa học</SelectItem>
+                        <SelectItem value="Lập trình">Lập trình (HSG Tin học)</SelectItem>
                       </SelectContent>
                     </Select>
                     {errors.subject && (
@@ -308,6 +309,10 @@ export default function RegisterPage() {
                         <SelectValue placeholder="- Chọn lớp -" />
                       </SelectTrigger>
                       <SelectContent>
+                        <SelectItem value="6">Lớp 6</SelectItem>
+                        <SelectItem value="7">Lớp 7</SelectItem>
+                        <SelectItem value="8">Lớp 8</SelectItem>
+                        <SelectItem value="9">Lớp 9</SelectItem>
                         <SelectItem value="10">Lớp 10</SelectItem>
                         <SelectItem value="11">Lớp 11</SelectItem>
                         <SelectItem value="12">Lớp 12</SelectItem>
@@ -337,7 +342,7 @@ export default function RegisterPage() {
                   className="w-full animate-pulse-glow-red bg-red-600 hover:bg-red-700 text-sm sm:text-base" 
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Đang xử lý..." : "Đăng ký"}
+                  {isSubmitting ? "Đang xử lý..." : "Đăng ký học thử MIỄN PHÍ"}
                 </Button>
               </form>
             </CardContent>
@@ -346,18 +351,18 @@ export default function RegisterPage() {
 
         {/* Thông tin thanh toán */}
         <div className="mt-6 sm:mt-8 bg-red-50 p-4 sm:p-6 rounded-lg">
-          <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Thông tin thanh toán</h2>
+          <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">💳 Thông tin thanh toán</h2>
           <div className="space-y-2 sm:space-y-3">
             <div className="flex items-start gap-2">
               <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-red-600 mt-1 flex-shrink-0" />
               <p className="text-sm sm:text-base">
-                Địa chỉ lớp: số 101 Làng Tăng Phú, P Tăng Nhơn Phú A, TP Thủ Đức, TP Hồ Chí Minh
+                Địa chỉ lớp: BS10 Vinhomes Grand Park, TP. Thủ Đức, TP Hồ Chí Minh
               </p>
             </div>
             <div className="flex items-start gap-2">
               <CreditCard className="h-4 w-4 sm:h-5 sm:w-5 text-red-600 mt-1 flex-shrink-0" />
               <p className="text-sm sm:text-base">
-                Học phí các lớp: 700.000đ - 800.000đ /tháng.
+                Học phí chỉ <strong>2.000.000 VNĐ/tháng</strong> – 2 buổi/tuần
               </p>
             </div>
 

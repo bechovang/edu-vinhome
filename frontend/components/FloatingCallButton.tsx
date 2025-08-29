@@ -11,7 +11,7 @@ export default function FloatingContactButtons() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       {/* Nút Zalo với hiệu ứng lắc */}
       <Link 
-        href="https://zalo.me/0971515451" 
+        href="https://zalo.me/0906063826" 
         target="_blank"
         rel="noopener noreferrer"
         className="animate-wiggle hover:animate-wiggle-more" // Hiệu ứng lắc
@@ -30,7 +30,7 @@ export default function FloatingContactButtons() {
       
       {/* Nút Gọi điện với hiệu ứng lắc */}
       <Link 
-        href="tel:0971515451"
+        href="tel:0906063826"
         className="animate-wiggle-faster hover:animate-wiggle-more-faster" // Hiệu ứng lắc nhanh hơn
       >
         <div className="h-16 w-16 rounded-full bg-green-600 hover:bg-green-700 shadow-lg flex items-center justify-center">

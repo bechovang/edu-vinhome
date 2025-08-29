@@ -14,8 +14,15 @@ export const metadata: Metadata = {
   title: "Trung tâm Ánh Bình Minh",
   description: "Trung tâm dạy học ngoài giờ - chuyên bồi dưỡng văn hoá cho học sinh phổ thông.",
   icons: {
-    icon: "/images/logo.jpg",
-    apple: "/images/logo.jpg",
+    icon: [
+      { url: "/images/logo.jpg", type: "image/jpeg" },
+      { url: "/logo.jpg", type: "image/jpeg" },
+    ],
+    apple: [
+      { url: "/images/logo.jpg", type: "image/jpeg" },
+      { url: "/logo.jpg", type: "image/jpeg" },
+    ],
+    shortcut: "/images/logo.jpg",
   },
 }
 

@@ -11,18 +11,18 @@ export default function Footer() {
 
           {/* Thông tin liên hệ */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Trung Tâm Bồi Dưỡng Ánh Bình Minh</h3>
+            <h3 className="text-xl font-bold mb-4">Lớp học tại Vinhomes Grand Park</h3>
             <div className="flex items-start mb-2">
               <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-              <span>Địa chỉ: số 101 Làng Tăng Phú, P Tăng Nhơn Phú A, TP Thủ Đức, TP Hồ Chí Minh</span>
+              <span>Địa chỉ: BS10 Vinhomes Grand Park,  TP Thủ Đức, TP Hồ Chí Minh</span>
             </div>
             <div className="flex items-center mt-4">
               <Phone className="h-5 w-5 mr-2" />
-              <span>Zalo: 0971515451</span>
+              <span>Hotline: 0906 063 826 | 0932 720 343</span>
             </div>
             <div className="flex items-center mt-2">
               <Mail className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-              <span>Email: anhbinhminh.infor@gmail.com</span>
+              <span>Email: lophocvinhomes.infor@gmail.com</span>
             </div>
           </div>
 
@@ -62,13 +62,13 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Kết nối với chúng tôi</h3>
             <div className="flex space-x-4 items-center">
-              <Link href="https://www.facebook.com/abmedu" className="hover:text-red-300 transition-colors">
+              <Link href="https://www.facebook.com/nguyen.ngoc.phuc.511590/" className="hover:text-red-300 transition-colors">
                 <Facebook className="h-8 w-8" />
               </Link>
-              <Link href="https://www.tiktok.com/@abmedu" className="hover:text-red-300 transition-colors">
+              <Link href="https://www.tiktok.com/@maitheduy1709" className="hover:text-red-300 transition-colors">
                 <FaTiktok className="h-8 w-8" />
               </Link>
-              <Link href="https://zalo.me/659811059618688301" className="group">
+              <Link href="https://zalo.me/0906063826" className="group">
                 <div className="relative h-8 w-8">
                   <Image 
                     src="/zalo-logo-white.svg" 
@@ -96,19 +96,19 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Bản đồ</h3>
             <div className="aspect-w-16 aspect-h-9 mb-2">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5583185812816!2d106.79635457594819!3d10.845073589307937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527ee4ecfbe0f%3A0x1052cd27bec80e62!2zVHJ1bmcgdMOibSBi4buTaSBkxrDhu6FuZyB2xINuIGhvw6Egw4FuaCBCw6xuaCBNaW5oIC0gQUJNZWR1!5e0!3m2!1sen!2s!4v1742963911154!5m2!1sen!2s"
-              width="100%"
-              height="200"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="rounded-lg"
-            ></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1326.674663887764!2d106.8434938463369!3d10.846815060896454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317521e828da24b7%3A0xa0586f58ab2172af!2sBS11%20-%20The%20Oasis%20-%20Vinhomes%20Grand%20Park!5e0!3m2!1sen!2s!4v1756461869416!5m2!1sen!2s"
+                width="100%"
+                height="200"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+              ></iframe>
             </div>
             <Link
-              href="https://www.google.com/maps/place/Trung+t%C3%A2m+b%E1%BB%93i+d%C6%B0%E1%BB%A1ng+v%C4%83n+ho%C3%A1+%C3%81nh+B%C3%ACnh+Minh+-+ABMedu/@10.8450736,106.7963546,17z/data=!3m1!4b1!4m6!3m5!1s0x317527ee4ecfbe0f:0x1052cd27bec80e62!8m2!3d10.8450736!4d106.7989295!16s%2Fg%2F11x32x7qhk?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+              href="https://maps.app.goo.gl/wZMk8Jm75w3btVAH6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm hover:text-red-300 transition-colors mt-2"
@@ -125,7 +125,9 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-red-800 mt-8 pt-8 text-center text-sm">
-          <p>© {new Date().getFullYear()} Trung Tâm Ánh Bình Minh. Tất cả quyền được bảo lưu.</p>
+          <p>© {new Date().getFullYear()} Lớp học tại Vinhomes Grand Park. Tất cả quyền được bảo lưu.</p>
+          <p className="mt-2">LỚP LUYỆN THI & NÂNG CAO ĐIỂM SỐ CẤP 2 & CẤP 3</p>
+          <p className="mt-1">TOÁN - LÝ - HÓA & LẬP TRÌNH (HSG TIN HỌC)</p>
           <p className="mt-2">Thiết kế bởi Ngọc Phúc</p>
         </div>
       </div>
